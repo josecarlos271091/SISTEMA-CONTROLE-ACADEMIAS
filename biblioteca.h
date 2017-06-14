@@ -1,0 +1,16 @@
+int verificaArquivoExistente(char *nomeArq);
+FILE* abreArquivo(char *nomeArq, char *modo);
+int validaData(int dia, int mes, int ano);
+void transformaIntData(int dataInt, int *dia,int *mes,int *ano);
+int transformaDataInt(int dia,int mes,int ano);
+int leValidaData(char *msg);
+void obtemDataHoraAtual(int *dia, int * mes, int *ano, int *hora, int *minutos, int *segundos);
+int restaDiasData(int *dia, int *mes, int *ano,int qtdeDias);
+void tiraTodosBrEsq(char *str);
+void tiraTodosBrDir(char *str);
+int validaCPF (char *cpf);
+char * formataCPF (char *cpf);
+void obtemDataAtual(int *dia, int *mes, int *ano);
+char * strIstr(char *str1, char *str2);
+int strIncmp(char *str1, char *str2,int tam);
+void strUpper(char * str);

@@ -1,15 +1,15 @@
-# Project: Academia
+# Project: jair_josecarlos_uc17100669_PF
 # Makefile created by Dev-C++ 5.11
 
 CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = Academia.o
-LINKOBJ  = Academia.o
+OBJ      = academia.o funcoesBasicas.o menus.o biblioteca.o apresentaDadosAcademia.o frequentadores.o series.o relatorios.o atividades.o
+LINKOBJ  = academia.o funcoesBasicas.o menus.o biblioteca.o apresentaDadosAcademia.o frequentadores.o series.o relatorios.o atividades.o
 LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = Academia.exe
+BIN      = Projeto_Final.exe
 CXXFLAGS = $(CXXINCS) 
 CFLAGS   = $(INCS) 
 RM       = rm.exe -f
@@ -24,5 +24,29 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-Academia.o: Academia.c
-	$(CC) -c Academia.c -o Academia.o $(CFLAGS)
+academia.o: academia.c
+	$(CC) -c academia.c -o academia.o $(CFLAGS)
+
+funcoesBasicas.o: funcoesBasicas.c
+	$(CC) -c funcoesBasicas.c -o funcoesBasicas.o $(CFLAGS)
+
+menus.o: menus.c
+	$(CC) -c menus.c -o menus.o $(CFLAGS)
+
+biblioteca.o: biblioteca.c
+	$(CC) -c biblioteca.c -o biblioteca.o $(CFLAGS)
+
+apresentaDadosAcademia.o: apresentaDadosAcademia.c
+	$(CC) -c apresentaDadosAcademia.c -o apresentaDadosAcademia.o $(CFLAGS)
+
+frequentadores.o: frequentadores.c
+	$(CC) -c frequentadores.c -o frequentadores.o $(CFLAGS)
+
+series.o: series.c
+	$(CC) -c series.c -o series.o $(CFLAGS)
+
+relatorios.o: relatorios.c
+	$(CC) -c relatorios.c -o relatorios.o $(CFLAGS)
+
+atividades.o: atividades.c
+	$(CC) -c atividades.c -o atividades.o $(CFLAGS)
